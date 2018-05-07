@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>About</title>
+        <style>
+            body {
+                background-color: #EAD57A;
+            }
+            
+            h1 {
+                font-family: sans-serif; 
+                font-style: italic;
+                color: white;
+                text-align: center;
+                padding-top: 200px;
+                padding-bottom: 20px;
+            }
+            
+            p {
+                color: white;
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            
+            #back {
+            background-color: #EAD57A;
+            color: white;
+            padding: 10px;
+            margin: 40px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 15%;
+            font-size: 20px;
+        }
+      
+        </style>
+    </head> 
+            
+    <body>
+        <h1 id="home">About Emoji Selector:</h1>
+        
+        <div>
+            <p>Have you ever wondered what emojis from different platforms look like?</p>
+            <p> Curious about which emojis are used more often in different parts of the world?</p>   
+            <p> Emoji Selector allows you to discover different emojis from various sources!</p>
+            
+        </div>
+        
+        <script>
+            
+            document.getElementById("back").onclick = function(){
+                document.getElementById("help").href = "Emoji.html";
+            }
+            
+        </script>
+        <div style="text-align: center">
+            <a href="Emoji.html"><button id="back">Jump back in!</button></a>
+        </div>
+        
+    </body>
+
+
+
+</html>

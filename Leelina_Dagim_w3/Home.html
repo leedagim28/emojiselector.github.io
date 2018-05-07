@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Home</title>
+        <style>
+            body {
+                background-color: darkcyan;
+            }
+            
+            h1 {
+                font-family: sans-serif; 
+                font-style: italic;
+                color: white;
+                text-align: center;
+                padding-top: 200px;
+                padding-bottom: 50px;
+            }
+            
+            #enter {
+                background-color: darkcyan;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 8px;
+                box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
+                cursor: pointer;
+                width: 15%;
+                font-size:20px;
+            }
+      
+        </style>
+    </head> 
+            
+    <body>
+        <h1 id="home">Welcome to Emoji Selector!</h1>
+        
+        <script>
+            
+            document.getElementById("enter").onclick = function(){
+                document.getElementById("home").href = "Emoji.html";
+            }
+            
+        </script>
+        <div style="text-align: center">
+            <a href="Emoji.html"><button id="enter">Enter</button></a>
+        </div>
+        
+    </body>
+
+
+
+</html>
+
+

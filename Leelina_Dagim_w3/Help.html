@@ -1,0 +1,61 @@
+<!DOCUMENT html>
+<head>
+    <title>Help</title>
+    <style>
+        body {
+            background-color: #8F94CF;
+        }
+            
+        h1 {
+            font-family: sans-serif; 
+            font-style: italic;
+            color: white;
+            text-align: center;
+            padding-top: 200px;
+            padding-bottom: 10px;
+        }
+            
+        .info {
+            color: white;
+            text-align: center;
+            padding-top: 10px;
+        }
+            
+        #back {
+            background-color: #8F94CF;
+            color: white;
+            padding: 10px;
+            margin: 50px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 15%;
+            font-size:20px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1 id="help">Need Help?</h1>
+   
+    <div class="info">
+        <p>For more information, please email emojiselector@email.com!</p>   
+    </div>
+        
+    <script>
+            
+            document.getElementById("back").onclick = function(){
+                document.getElementById("help").href = "Emoji.html";
+            }
+            
+        </script>
+        <div style="text-align: center">
+            <a href="Emoji.html"><button id="back">Jump back in!</button></a>
+        </div>
+    
+    
+   
+
+</body>

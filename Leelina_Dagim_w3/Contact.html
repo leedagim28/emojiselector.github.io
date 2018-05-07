@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Contact</title>
+        <style>
+            body {
+                background-color: #B0D078;
+            }
+            
+            h1 {
+                font-family: sans-serif; 
+                font-style: italic;
+                color: white;
+                text-align: center;
+                padding-top: 200px;
+                padding-bottom: 20px;
+            }
+            
+            p {
+                color: white;
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            
+            #back {
+            background-color: #B0D078;
+            color: white;
+            padding: 10px;
+            margin: 40px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.2);
+            cursor: pointer;
+            width: 15%;
+            font-size: 20px;
+        }
+      
+        </style>
+    </head> 
+            
+    <body>
+        <h1 id="home">Contacts:</h1>
+        
+        <div>
+            <p> Email: emojiselector@email.com</p>
+            <p> Office Phone: 1-800-EMOJI</p>
+        </div>
+        
+        <script>
+            
+            document.getElementById("back").onclick = function(){
+                document.getElementById("help").href = "Emoji.html";
+            }
+            
+        </script>
+        <div style="text-align: center">
+            <a href="Emoji.html"><button id="back">Jump back in!</button></a>
+        </div>
+        
+    </body>
+
+
+
+</html>

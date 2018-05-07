@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Emoji Selector</title>
+        <link rel="stylesheet" type="text/css" href="Emoji.css" id="theme"/>
+        <link rel="alternate" type="text/css" href="dark_theme.css">
+        <link rel="alternate" type="text/css" href="emoji_theme.css">
+        
+    </head>
+    
+    <body>
+        
+        <nav>
+             <ul id="menu1">
+                 <li><a href="Home.html">Home</a></li>
+                 <li><a href="About.html">About</a></li>
+                 <li><a href="Contact.html">Contact</a></li>    
+            </ul>
+            
+            <ul id="menu2">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="Help.html">Help</a></li>
+            </ul>
+    
+        </nav>
+        
+        
+        <div id="modal" class="modalClass">
+            <p><span class="error">* required field.</span></p>
+            <p><span class="error">* required field</span></p>                 
+            <form class="account-form" action="sign_up.php">
+                <div class = "modal-content">
+                <span class="exit">&times;</span>
+                <img src="images/login-icon.png" alt="Avatar" class="avatar" width="150px" height="130px" >
+
+            </div>
+                
+                <div class="form">
+                    <input type="text" placeholder="Enter Username" name="username">
+                    <span class="error">* required field <?php echo $usernameErr;?></span>
+                    <input type="password" placeholder="Enter Password" name="password">
+                    <span class="error">* required field <?php echo $passwordErr;?></span>
+                    <button type="submit">Enter</button>
+                    <input type="checkbox"> Remember me
+                    <a href="#">Forgot Password?</a>
+                </div>
+                </form>    
+            </div>
+        
+       
+        <div class="jumbotron">
+            <h1> Emoji Selector</h1>
+            <h4>Find your emoji</h4>
+        </div>
+        
+        <div class="main">
+            <h2>Select Source</h2>
+        </div>
+        <div class="row">
+        <div class="sources" >
+            <img src="images/kakaotalklogo.jpg" width="150" height="150" alt="KakaoTalk" /> 
+            <img src="images/wechat.jpg" width="200" height="200" alt="WeChat" />
+            <img src="images/android.jpg" width="150" height="150" alt="Android"/>
+            </div>
+        <div class="sources" >  
+            <img src="images/iMessage.png" width="150" height="150" alt="iMessage"/> 
+            <img src="images/facebook_messenger.png" width="140" height="140" alt="facebook"/>
+            <img src="images/line.png" width="185" height="185" alt="line"/>
+            </div>
+        <div class="sources" >
+            <img src="images/whatsapp.png" width="150" height="150" alt="whatsapp"/>
+            <img src="images/snapchat.png" width="150" height="150" alt="snapchat"/>
+            <img src="images/viber.png" width="150" height="150" alt="viber"/>    
+            </div>
+        </div>
+
+        <div id="checkboxs">
+
+           
+            <form class="checkbox" ><input type="checkbox"> 
+            
+                <label></label>
+                <input type="checkbox"> 
+                <input type="checkbox"> 
+                <input type="checkbox" >
+                <input type="checkbox" >
+                <input type="checkbox" >
+                <input type="checkbox" >
+                <input type="checkbox" >
+                <input type="checkbox" >
+            </form>
+            </div>
+            
+        <div style="text-align: center">
+        <button class="next" onclick="Next()">Next</button>
+        </div>
+
+        <h5 class="themes"> Choose a Theme!</h5>
+       <div id="buttons">
+        <button id="basic_btn">Basic</button>
+        <button id="cute_btn">Cute</button>
+        <button id="emoji_btn">Emoji Party</button>
+        <button id="dark_btn">Lights Out</button>
+     
+        <script src="Emoji.js"></script>
+       </div> 
+        
+    
+        
+    </body>
+
+</html> 
